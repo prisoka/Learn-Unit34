@@ -1,0 +1,119 @@
+<!-- Signup Form
+Create a new project on your computer that includes an index.html.
+In the file, write valid and semantic HTML that includes a form that has the following fields:
+
+Email
+Password
+Github Username
+Radio buttons with the following options: Enterprise, Pro, Free
+A checkbox with the words "Remember Me" next to it.
+Push your code up to Github and then paste the URL to your repository below. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+
+  <body>
+    <form>
+      <section class="hero is-light">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Signup Form</h1>
+            <h2 class="subtitle">Checkpoint: Unit 34</h2>
+          </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="email" placeholder="Type your email here" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
+          <!-- <p class="help is-danger">This email is invalid</p> -->
+        </div>
+
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" type="password" name="password" placeholder="Type password">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Github Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Type your name here" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <!-- <p class="help is-success">This username is available</p> -->
+        </div>
+
+        <div class="field">
+          <label class="label">Account type</label>
+          <div class="control">
+            <div class="select">
+              <select name="options">
+                <option>Select an option</option>
+                <option>Enterprise</option>
+                <option>Pro</option>
+                <option>Free</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="control">
+          <label class="label">Account type</label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            Enterprise
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            Pro
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            Free
+          </label>
+        </div> -->
+
+        <div class="field">
+          <label class="label">Do you have additional comments?</label>
+          <div class="control">
+            <textarea class="textarea" name="comments" placeholder="Write add comments here"></textarea>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox">
+            Remember me
+        </label><br>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-text">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
