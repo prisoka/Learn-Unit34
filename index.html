@@ -8,38 +8,39 @@ Github Username
 Radio buttons with the following options: Enterprise, Pro, Free
 A checkbox with the words "Remember Me" next to it.
 Push your code up to Github and then paste the URL to your repository below. -->
+<!DOCTYPE html>
+<html>
+  <form>
+    <fieldset>
+      <label>Email</label>
+      <input type="text" name="email" placeholder="Put your Email here..."><br>
 
-<form>
-  <fieldset>
-    <label>Email</label>
-    <input type="text" name="email" placeholder="Put your Email here..."><br>
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Put your password here..."><br>
 
-    <label>Password</label>
-    <input type="password" name="password" placeholder="Put your password here..."><br>
+      <label>Github Username</label>
+      <input type="text" name="github" value="" placeholder="Put your Github username here..."><br>
+    </fieldset>
 
-    <label>Github Username</label>
-    <input type="text" name="github" value="" placeholder="Put your Github username here..."><br>
-  </fieldset>
+    <fieldset>
+      <legend>Buttons for options</legend>
 
-  <fieldset>
-    <legend>Buttons for options</legend>
+      <input <input type="radio" id="radioButton1" name="test" value="Enterprise">
+      <label for="enterprise">Enterprise</label><br>
 
-    <input <input type="radio" id="radioButton1" name="test" value="Enterprise">
-    <label for="enterprise">Enterprise</label><br>
+      <input <input type="radio" id="radioButton2" name="test" value="Pro">
+      <label for="pro">Pro</label><br>
 
-    <input <input type="radio" id="radioButton2" name="test" value="Pro">
-    <label for="pro">Pro</label><br>
+      <input <input type="radio" id="radioButton3" name="test" value="Free">
+      <label for="free">Free</label><br>
+    </fieldset>
 
-    <input <input type="radio" id="radioButton3" name="test" value="Free">
-    <label for="free">Free</label><br>
-  </fieldset>
+    <fieldset>
+      <legend>Click here if you want to be remembered</legend>
+      <input id="checkbox" type="checkbox" name="remember me" value="Remember me">
+      <label for="checkbox">Remember me</label><br><br>
+    </fieldset>
 
-  <fieldset>
-    <legend>Click here if you want to be remembered</legend>
-    <input id="checkbox" type="checkbox" name="remember me" value="Remember me">
-    <label for="checkbox">Remember me</label><br><br>
-  </fieldset>
-
-  <button type="submit">Submit</button>
-
-</form>
+    <button type="submit">Submit</button>
+  </form>
+</html>
